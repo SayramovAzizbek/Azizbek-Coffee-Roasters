@@ -168,10 +168,6 @@ header {
     color: #000000;
 }
 
-.collection-list {
-
-}
-
 .collection-item {
     display: flex;
     align-items: center;
@@ -179,7 +175,7 @@ header {
     list-style: none;
     position: relative;
     margin: 80px auto 0;
-    width: 1020px;
+    width: 1120px;
 }
 
 .collection-item:not(:first-child) {
@@ -190,7 +186,7 @@ header {
     content: '';
     position: absolute;
     top: -130px;
-    left: -358px;
+    left: -333px;
     width: 402px;
     height: 300px;
     background-image: url('../images/collection-img-1.svg');
@@ -202,7 +198,7 @@ header {
     content: '';
     position: absolute;
     bottom: -280px;
-    right: -462px;
+    right: -436px;
     width: 392px;
     height: 477px;
     background-image: url('../images/collection-img-2.svg');
@@ -214,7 +210,7 @@ header {
     content: '';
     position: absolute;
     top: 0px;
-    left: -420px;
+    left: -390px;
     width: 316px;
     height: 269px;
     background-image: url('../images/collection-img-3.svg');
@@ -244,7 +240,6 @@ header {
 
 .collection-item:nth-child(even) .collection-item-info {
     margin-right: 117px;
-    margin-left: 0;
 }
 
 .collection-item-info h3 {
