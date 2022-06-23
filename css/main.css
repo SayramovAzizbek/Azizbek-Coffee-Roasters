@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --main-black-color: #000000;
+    --main-gray-color: #333333;
+    --main-white-color: #ffffff;
+    --main-link-color: #C99B67;
+}
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
@@ -25,6 +39,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -46,8 +61,14 @@ header {
 }
 
 .header-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -56,7 +77,11 @@ header {
 }
 
 .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     list-style: none;
 }
@@ -70,7 +95,7 @@ header {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 1px;
-    color: #333333;
+    color: var(--main-gray-color);
     text-decoration: none;
 }
 
@@ -83,8 +108,14 @@ header {
 }
 
 .hero-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -92,7 +123,7 @@ header {
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
-    color: #000000;
+    color: var(--main-black-color);
 }
 
 .hero-info {
@@ -105,7 +136,7 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--main-black-color);
     mix-blend-mode: normal
 }
 
@@ -117,7 +148,7 @@ header {
     line-height: 19px;
     letter-spacing: 1px;
     /* font-variant: small-caps; */
-    color: #FFFFFF;
+    color: var(--main-white-color);
     mix-blend-mode: normal;
     background: #0A775F;
     border-radius: 100px;
@@ -139,7 +170,6 @@ header {
     width: 160px;
     height: 160px;
     background-image: url('../images/hero-round-img.png');
-    background-size: contain;
     background-position: center;
 }
 
@@ -165,13 +195,16 @@ header {
     line-height: 59px;
     text-align: center;
     font-variant: small-caps;
-    color: #000000;
+    color: var(--main-black-color);
 }
 
 .collection-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    /* justify-content: space-between; */
     list-style: none;
     position: relative;
     margin: 80px auto 0;
@@ -219,6 +252,9 @@ header {
 }
 
 .collection-item:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 
@@ -230,6 +266,7 @@ header {
 .collection-item:nth-child(3) .collection-item-info {
     width: 390px;
 }
+
 .collection-item:nth-child(4) .collection-item-info {
     width: 410px;
 }
@@ -247,7 +284,7 @@ header {
     font-size: 48px;
     line-height: 56px;
     font-variant: small-caps;
-    color: #333333;
+    color: var(--main-gray-color);
 }
 
 .collection-item-info p {
@@ -255,7 +292,264 @@ header {
     font-weight: 400;
     font-size: 22px;
     line-height: 34px;
-    color: #333333;
+    color: var(--main-gray-color);
 }
 
 /* End of Collection Section */
+/* Start Choose Section */
+#choose {}
+
+.choose-part-main {
+    margin: 20px 20px 0 20px;
+    background-image: url('../images/choosebg-img.jpg');
+}
+
+.choose-part {
+    position: relative;
+}
+
+.choose-text {
+    padding: 50px 0 500px;
+    width: 581px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.choose-text h2,
+.how-it-works-text h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    color: var(--main-white-color);
+}
+
+.choose-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--main-white-color);
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.choose-list {
+    position: absolute;
+    top: 283px;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+}
+
+.choose-item {
+    width: 433px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.choose-item:nth-child(1):before {
+    content: '';
+    background-image: url('../images/choose-absolute-img.png');
+    width: 140px;
+    height: 144px;
+    position: absolute;
+    top: -10%;
+    left: -14%;
+}
+
+.item-text-box {
+    width: 377px;
+}
+
+.item-text-box-last {
+    width: 334px;
+}
+
+.item-text-box h3 {
+    margin: 28px 0 10px 0;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    font-variant: small-caps;
+    color: var(--main-gray-color);
+}
+
+.item-text-box p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-gray-color);
+}
+
+/* End of Choose Section */
+
+/* Start How It Works */
+.how-it-works-main-part {
+    margin: 289px 20px 0 20px;
+    background-image: url('../images/how-it-work-bg-img.jpg');
+    padding: 50px 0;
+}
+
+.how-it-works-text {
+    text-align: center;
+}
+
+.decoration-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 80px 0 20px 0;
+    width: 966px;
+}
+
+.decoration-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.decoration-main-box {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #F8F8F2;
+    border: 4px solid var(--main-link-color);
+}
+
+.decoration-box-line {
+    border: 1px dashed var(--main-link-color);
+    width: 390px;
+}
+
+.how-it-work-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+}
+
+.how-it-works-item {
+    margin-right: 20px;
+    padding: 20px 20px 40px 20px;
+    width: 433px;
+    background-color: #F8F8F2;
+    position: relative;
+}
+
+.how-it-works-item:nth-child(3)::after {
+    position: absolute;
+    top: -60%;
+    right: 5%;
+    content: '';
+    width: 192px;
+    height: 130px;
+    background-image: url('../images/how-it-works-absolute-img.png');
+    background-size: 202px 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.how-it-works-item p:first-child {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--main-gray-color);
+    opacity: 0.8;
+    text-align: right;
+}
+
+.how-it-works-item-title-box {
+    width: 231px;
+    margin: 45px 0 10px 0;
+}
+
+.how-it-works-item-title-box h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 37px;
+    font-variant: small-caps;
+    color: var(--main-gray-color);
+}
+
+.how-it-works-item p:last-child {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-gray-color);
+}
+
+.how-it-works-link-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 76px;
+}
+
+.how-it-works-link {
+    display: inline-block;
+    padding: 16px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: var(--main-white-color);
+    background-color: var(--main-link-color);
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+/* End of How It Works */
+/* Start Footer Section */
+footer {
+    background-image: url('../images/orange-bg-img.jpg');
+    margin-top: 50px;
+    padding: 65px 0;
+}
+
+.foooter-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.icon-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+}
+
+.icon-item {
+    margin-left: 30px;
+}
+
+/* End of Footer Section */
