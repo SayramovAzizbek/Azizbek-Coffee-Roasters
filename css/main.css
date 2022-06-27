@@ -590,8 +590,13 @@ footer {
 }
 
 .commitment-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
@@ -638,7 +643,11 @@ footer {
 
 .quality-part {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /* justify-content: space-between; */
     padding: 100px 0 118px 0;
@@ -701,8 +710,14 @@ footer {
 }
 
 .headquarter-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 80px;
     list-style: none;
@@ -766,10 +781,10 @@ footer {
 .modal-main {
     display: none;
     position: fixed;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     background-color: #000000a6;
 }
 
@@ -778,11 +793,12 @@ footer {
 }
 
 .modal {
+    position: relative;
     width: 561px;
     background-color: #F8F8F2;
-    position: relative;
     top: 20%;
     left: 35%;
+    -webkit-animation: slidedown 1s 1;
     animation: slidedown 1s 1;
 }
 
@@ -791,8 +807,8 @@ footer {
 }
 
 .modal-title {
-    background-color: var(--main-link-color);
     padding: 19px 30px;
+    background-color: var(--main-link-color);
 }
 
 .modal-title h3 {
@@ -813,7 +829,7 @@ footer {
     font-size: 24px;
     line-height: 34px;
     /* font-variant: small-caps; */
-    color: #000000;
+    color: var(--main-black-color);
 }
 
 .modal-text-quote p span {
@@ -831,8 +847,14 @@ footer {
 }
 
 .modal-buy-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -862,16 +884,32 @@ footer {
     cursor: pointer;
 }
 
+@-webkit-keyframes slidedown {
+
+    from {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+}
+
 @keyframes slidedown {
 
-    from{
-      transform: translateY(-1000px);
+    from {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
     }
-  
-    to{
-      transform: translateY(0);
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-  
-  }
+
+}
 
 /* End of Modal */
