@@ -561,3 +561,196 @@ footer {
 }
 
 /* End of Footer Section */
+
+/* --------Start About Page --------- */
+
+/* Start About Hero Section */
+.about-hero-text {
+    width: 455px;
+    padding: 122px 0 225px 84px;
+}
+
+.about-bg-box {
+    left: 89.5px;
+}
+
+/* End of About Hero Section */
+
+/* Start Commitment Section */
+#commitment {
+    position: relative;
+    margin: 0 20px 0px 20px;
+    padding: 160px 0 200px 0;
+    background-image: url('../images/gray-bg-img.jpg');
+}
+
+.commitment-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.commitment-part::before {
+    content: '';
+    position: absolute;
+    top: 43px;
+    left: -129px;
+    width: 402px;
+    height: 300px;
+    background-image: url('../images/collection-img-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.commitment-text {
+    width: 626px;
+}
+
+.commitment-text h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    font-variant: small-caps;
+    /* text-transform: uppercase; */
+    color: var(--main-black-color);
+}
+
+.commitment-text p {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--main-gray-color);
+}
+
+/* End of Commitment Section */
+
+/* Start Quality Section */
+#quality {
+    margin: 160px 20px 0 20px;
+    background-image: url('../images/choosebg-img.jpg');
+}
+
+.quality-part {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 100px 0 118px 0;
+    color: var(--main-white-color);
+}
+
+.quality-text {
+    width: 639px;
+    margin-left: 90px;
+}
+
+.quality-title {
+    width: 397px;
+}
+
+.quality-title h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+}
+
+.quality-text p {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--main-white-color);
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.quality-img {
+    position: absolute;
+    top: -80px;
+    right: 0;
+}
+
+/* End of Quality Section */
+
+/* Start Headquarter Section */
+#headquarter {
+    margin: 20px 20px 50px 20px;
+    background-image: url('../images/how-it-work-bg-img.jpg');
+}
+
+.headquarter-part {
+    padding: 70px 0 100px 0;
+}
+
+.headquarter-part h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 59px;
+    text-align: center;
+    /* font-variant: small-caps; */
+    text-transform: uppercase;
+    color: var(--main-white-color);
+}
+
+.headquarter-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.headquarter-item {
+    width: 433px;
+    background-color: #F8F8F2;
+    position: relative;
+    padding: 140px 0 40px 20px;
+}
+
+.canada-item,
+.australia-item {
+    padding-top: 187px;
+}
+
+.headquarter-item::before {
+    content: '';
+    position: absolute;
+    top: 45px;
+    right: 55px;
+    width: 120px;
+    height: 143px;
+    background-image: url('../images/uk-map.svg');
+    background-repeat: no-repeat;
+}
+
+.canada-item::before {
+    background-image: url('../images/canada-map.svg');
+}
+
+.australia-item::before {
+    background-image: url('../images/australia-map.svg');
+}
+
+.uk-item-title {
+    width: 231px;
+}
+
+.headquarter-item h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--main-gray-color);
+}
+
+.headquarter-item-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-gray-color);
+}
+
+/* End of Headquarter Section */
+/* --------End of About Page --------- */
