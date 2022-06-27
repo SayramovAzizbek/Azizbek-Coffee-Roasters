@@ -28,8 +28,11 @@
                             <a href="./about.html">ABOUT US</a>
                         </li>
                         <li class="header-item">
-                            <a href="#">CREATE YOUR PLAN</a>
+                            <!-- <a href="#">CREATE YOUR PLAN</a> -->
+                            <!-- Vaqtinchalikka qo'yilgan btn -->
+                            <button type="button" class="modal-open-btn">CREATE YOUR PLAN</button>
                         </li>
+
                     </ul>
                 </nav>
             </div>
@@ -249,6 +252,34 @@
         </div>
     </footer>
     <!-- End of Footer Section -->
+
+
+
+    <!-- Modal -->
+    <div class="modal-main">
+        <div class="modal">
+            <div class="modal-title">
+                <h3>order Summary</h3>
+            </div>
+            <div class="modal-text">
+                <div class="modal-text-quote">
+                    <p>“I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of bean.
+                        <span>250g</span>
+                        ground ala <span>Cafetiére</span>, sent to me <span>Every Week</span>.”</p>
+                </div>
+                <p class="modal-info-text">Is this correct? You can proceed to checkout or go back to plan selection if
+                    something is off.
+                    Subscription discount codes can also be redeemed at the checkout. </p>
+                <div class="modal-buy-part">
+                    <p>$14.00/ mo</p>
+                    <!-- <a href="#">Checkout</a> -->
+                    <button class="close-modal-btn" type="button">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
