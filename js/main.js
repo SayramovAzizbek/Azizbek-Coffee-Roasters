@@ -9,3 +9,4 @@ modalOpenBtn.addEventListener('click', () => {
 closeModal.addEventListener('click', () => {
 modalMain.classList.remove('modal-main-On')
 })
+

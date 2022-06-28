@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --main-black-color: #000000;
     --main-gray-color: #333333;
@@ -46,6 +53,20 @@ body {
     padding: 0 20px;
 }
 
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* Start Header Section */
 
 header {
@@ -83,18 +104,13 @@ header {
     margin-left: 40px;
 }
 
-.header-item a,
-.header-item button {
+.header-item a {
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 1px;
     color: var(--main-gray-color);
     text-decoration: none;
-    /* Vaqtinchalik qo'yilgan button hususiyati */
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }
 
 /* End of Header Section */
@@ -713,9 +729,9 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
+    /* -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center; */
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -763,18 +779,250 @@ footer {
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
+    text-transform: uppercase;
     color: var(--main-gray-color);
 }
 
-.headquarter-item-text p {
+.headquarter-item-text{
+    width: 178px;
+}
+
+.headquarter-item-text a  {
+    display: inline-block;
     font-weight: 400;
     font-size: 18px;
+    font-style: normal;
     line-height: 28px;
     color: var(--main-gray-color);
+    text-decoration: none;
+}
+
+.headquarter-item-text a{
+    display: inline-block;
+    /* margin-top: 10px; */
+    text-decoration: none;
 }
 
 /* End of Headquarter Section */
-/* --------End of About Page --------- */
+/* -------- End of About Page --------- */
+
+
+/* -------- Start Plan Page --------- */
+/* Start Under Hero Section */
+#under-hero {
+    margin: 0 20px 0 20px;
+    background-image: url(../images/how-it-work-bg-img.jpg);
+    padding: 80px 0;
+}
+
+#under-hero .how-it-works-main-part {
+    margin: 0;
+    padding: 0;
+}
+
+.under-hero-list .how-it-works-item:nth-child(3)::after {
+    display: none;
+}
+
+.under-hero-part .decoration-boxes {
+    margin: 0 0 20px 0;
+}
+
+/* End of Under Hero Section */
+
+/* Start Question Section */
+#question {
+    overflow-x: hidden;
+}
+
+.question-bg-box {
+    margin: 20px 20px 80px 20px;
+    padding: 50px 0;
+    background-image: url('../images/gray-bg-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.question-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-series-list,
+.question-form-list {
+    list-style: none;
+}
+
+.question-series-item:not(:last-child) {
+    margin: 0 0 35px 0;
+}
+
+.question-series-item a {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #555555;
+    border-bottom: 3px dashed transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.question-series-item a:hover {
+    color: var(--main-black-color);
+    border-bottom: 3px dashed var(--main-link-color);
+}
+
+.question-form-box {
+    width: 660px;
+    margin-right: 94px;
+}
+
+.question-form-list {
+    position: relative;
+}
+
+.question-form-list::after {
+    content: '';
+    position: absolute;
+    top: 170px;
+    right: -65%;
+    width: 400px;
+    height: 470px;
+    background-image: url('../images/collection-img-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.question-btn {
+    width: 660px;
+    margin-bottom: 20px;
+    text-align-last: left;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 47px;
+    color: var(--main-black-color);
+    background-color: transparent;
+    background-image: url('../images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: none;
+    text-transform: uppercase;
+}
+
+.question-box {
+    display: none;
+}
+
+.question-show-On .question-box {
+    display: flex;
+}
+
+.question-label {
+    display: flex;
+    margin-right: 18px;
+}
+
+.label-main-input:checked+.input-box {
+    background-color: #0A775F;
+}
+
+.label-main-input:checked+.input-box span {
+    color: var(--main-white-color);
+}
+
+.input-box {
+    width: 208px;
+    margin-bottom: 60px;
+    padding: 30px 16px 56px 16px;
+    background-color: #C6DCCF;
+}
+
+.input-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--main-gray-color);
+    text-transform: uppercase;
+}
+
+.input-text {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--main-gray-color);
+}
+
+.summary-box {
+    margin-top: 40px;
+    padding: 40px 20px;
+    color: var(--main-white-color);
+    background-color: var(--main-link-color);
+}
+
+.summary-box {
+    position: relative;
+}
+
+.summary-box::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: -135%;
+    width: 400px;
+    height: 470px;
+    background-image: url('../images/collection-img-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.summary-box h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+}
+
+.summary-box p {
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--main-white-color);
+}
+
+.summary-box p span {
+    color: var(--main-gray-color);
+}
+
+.form-btn-box-sumbit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.question-form-submit-btn,
+.form-btn-box-sumbit button {
+    margin-top: 20px;
+    padding: 14px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: var(--main-white-color);
+    mix-blend-mode: normal;
+    background-color: #0A775F;
+    border-radius: 100px;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* End of Question Section */
+
+/* -------- End of Plan Page --------- */
 
 /* Start Modal */
 
@@ -797,13 +1045,9 @@ footer {
     width: 561px;
     background-color: #F8F8F2;
     top: 20%;
-    left: 35%;
+    left: 32%;
     -webkit-animation: slidedown 1s 1;
     animation: slidedown 1s 1;
-}
-
-.modal-show {
-    display: block;
 }
 
 .modal-title {
@@ -815,7 +1059,6 @@ footer {
     font-weight: 700;
     font-size: 38px;
     line-height: 52px;
-    /* font-variant: small-caps; */
     color: var(--main-white-color);
     text-transform: uppercase;
 }
@@ -828,7 +1071,6 @@ footer {
     font-weight: 500;
     font-size: 24px;
     line-height: 34px;
-    /* font-variant: small-caps; */
     color: var(--main-black-color);
 }
 
@@ -879,7 +1121,7 @@ footer {
     background-color: #0A775F;
     border-radius: 100px;
     text-decoration: none;
-    /* Vaqtinchalik qo'yilgan button */
+    /* Vaqtinchalik qo'yilgan button xususiyatlari*/
     border: none;
     cursor: pointer;
 }
