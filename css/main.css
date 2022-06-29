@@ -12,6 +12,20 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
     --main-black-color: #000000;
     --main-gray-color: #333333;
@@ -953,7 +967,25 @@ footer {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
+}
+
+.question-show-On .question-box-abs-img {
+    position: relative;
+}
+
+.question-show-On .question-box-abs-img::before {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: -135%;
+    width: 400px;
+    height: 470px;
+    background-image: url('../images/collection-img-1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .question-label {
@@ -1000,22 +1032,6 @@ footer {
     padding: 40px 20px;
     color: var(--main-white-color);
     background-color: var(--main-link-color);
-}
-
-.summary-box {
-    position: relative;
-}
-
-.summary-box::before {
-    content: '';
-    position: absolute;
-    bottom: -100%;
-    left: -135%;
-    width: 400px;
-    height: 470px;
-    background-image: url('../images/collection-img-1.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .summary-box h2 {
