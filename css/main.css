@@ -904,6 +904,8 @@ footer {
 }
 
 .question-btn {
+    display: flex;
+    align-items: center;
     width: 660px;
     margin-bottom: 20px;
     -moz-text-align-last: left;
@@ -913,11 +915,17 @@ footer {
     line-height: 47px;
     color: var(--main-black-color);
     background-color: transparent;
-    background-image: url('../images/arrow-down.svg');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
     border: none;
     text-transform: uppercase;
+}
+
+.question-btn::after {
+    content: '';
+    width: 18px;
+    height: 11px;
+    margin-left: 55px;
+    background-image: url('../images/arrow-down.svg');
+    background-repeat: no-repeat;
 }
 
 .question-box {
@@ -928,6 +936,10 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+
+.question-show-On .question-btn::after {
+    transform: rotate(180deg);
 }
 
 .question-label {
