@@ -131,7 +131,8 @@ header {
     justify-content: space-between;
 }
 
-.hero-info h1 {
+.hero-info h1,
+.about-hero-text h2 {
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
