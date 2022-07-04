@@ -1,31 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 :root {
     --main-black-color: #000000;
     --main-gray-color: #333333;
@@ -162,7 +134,7 @@ header {
 
 .hero-info {
     width: 545px;
-    padding: 122px 0 243px 84px;
+    padding: 116px 0 0 84px;
 }
 
 .hero-info p {
@@ -181,7 +153,6 @@ header {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 1px;
-    /* font-variant: small-caps; */
     color: var(--main-white-color);
     mix-blend-mode: normal;
     background: #0A775F;
@@ -611,7 +582,7 @@ footer {
 /* Start About Hero Section */
 .about-hero-text {
     width: 455px;
-    padding: 122px 0 225px 84px;
+    padding: 116px 0 0 84px;
 }
 
 .about-bg-box {
